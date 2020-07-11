@@ -1,0 +1,58 @@
+{
+  "candidates": [
+    {
+      "id": 1,
+      "name": "Vedavyas",
+      "mobile": "7674997266",
+      "email": "vedavyasreddy@live.in",
+      "role": "UI developer",
+      "experience": [
+        {
+          "company": "Deloitte",
+          "Designation": "Senior UI Developer"
+        },
+        {
+          "company": "Stupendous",
+          "Designation": "UI Developer"
+        }
+      ],
+      "skillset": ["Angular","html","css"]
+    },
+    {
+      "id": 2,
+      "name": "Harsha",
+      "mobile": "7674997266",
+      "email": "vedavyasreddy@live.in",
+      "role": "Node JS developer",
+      "experience": [
+        {
+          "company": "Deloitte",
+          "Designation": "Senior UI Developer"
+        },
+        {
+          "company": "Stupendous",
+          "Designation": "UI Developer"
+        }
+      ],
+      "skillset": ["Angular","html","css"]
+    },
+    {
+      "id": 3,
+      "name": "Charan",
+      "mobile": "7674997266",
+      "email": "vedavyasreddy@live.in",
+      "role": "Jr UI developer",
+      "experience": [
+        {
+          "company": "Deloitte",
+          "Designation": "Senior UI Developer"
+        },
+        {
+          "company": "Stupendous",
+          "Designation": "UI Developer"
+        }
+      ],
+      "skillset": ["Angular","html","css"]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+<br>
+<app-header></app-header>
+
+<div class="container">
+  <h2>{{ CandidateList.name }} Profile</h2>
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          Personal Details
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <span class="badge badge-primary">ID :</span>
+              {{ CandidateList.id }}
+            </li>
+            <li class="list-group-item">
+              <span class="badge badge-primary">NAME :</span>
+              {{ CandidateList.name }}
+            </li>
+            <li class="list-group-item">
+              <span class="badge badge-primary">MOBILE :</span>
+              {{ CandidateList.mobile }}
+            </li>
+            <li class="list-group-item">
+              <span class="badge badge-primary">EMAIL :</span>
+              {{ CandidateList.email }}
+            </li>
+            <li class="list-group-item">
+              <span class="badge badge-primary">ROLE :</span>
+              {{ CandidateList.role }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        Technichal Skills
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          {{ CandidateList.skillset }}
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          Experience Details
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          {{ CandidateList.experience | json }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

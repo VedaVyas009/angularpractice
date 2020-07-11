@@ -1,0 +1,26 @@
+<!-- <pre>{{ CandidateList | json}}</pre> -->
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="card bg-info text-white text-center">Candidates List</div>
+    </div>
+  </div>
+</div>
+
+<br>
+<div class="container">
+  <div class="row">
+    <div
+      *ngFor="let candidate of CandidateList"
+      [routerLink]="['/profile', candidate.id]"
+      class="col-12 col-xs-12 col-sm-12 col-md-4 col=md-4">
+      <div class="card bg-light text-dark">
+        <div class="card-body">
+          <span class="badge badge-pill badge-success">ID: {{ candidate.id }}</span>
+          {{ candidate.name }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
